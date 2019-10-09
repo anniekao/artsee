@@ -61,7 +61,18 @@ export default class CameraScreen extends React.Component {
       "Content-Type": "application/json"},
       body: JSON.stringify(data)
     }).then((response) => response.json()).then(res => {
-      this.props.setArts(user.id)
+      let art = res
+      art.latitude = Number(art.latitude);
+      art.longitude = Number(art.longitude);
+      art.comments = []
+      art.liked=  false,
+      art.liked_count = 0,
+      art.seelist = false,
+      art.seelist_count = 0,
+      art.visited = false,
+      art.visited_count = 0,
+      console.log("==|==|> inside camera, art:",art)
+      this.props.addArt(art)
     });           
   }
 

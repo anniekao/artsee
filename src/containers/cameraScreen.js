@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { setArts } from '../actions'
+import { addArt } from '../actions'
 import CameraScreen from '../Components/CameraScreen'
 
 const mapStateToProps = (state) => ({
@@ -7,7 +7,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  setArts: id => dispatch(setArts(id))
+  addArt: art => dispatch(addArt(art))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(CameraScreen)

@@ -18,6 +18,7 @@ const SET_FILTER_ARRAY = "SET_FILTER_ARRAY";
 const SET_COMMENTS = "SET_COMMENTS";
 const SET_NEW_COMMENT = "SET_NEW_COMMENT";
 const UPDATE_ART_COMMENTS = "UPDATE_ART_COMMENTS";
+const ADD_ART = "ADD_ART";
 
 const fetching = () => {
   return {
@@ -56,6 +57,14 @@ const setArts = (arts) => {
   return {
     type: SET_ARTS_DATA,
     arts
+  }
+}
+
+export const addArt = art => {
+  console.log("==||==||> from addArt:",art)
+  return {
+    type: ADD_ART,
+    art
   }
 }
 
@@ -215,7 +224,7 @@ export const fetchArts = (userId) => dispatch => {
                 data.forEach(comment => {
                   if (arts[comment.art_id]) arts[comment.art_id].comments.push(comment)
                 })
-
+                
                 dispatch(setArts(arts))
               })
             )

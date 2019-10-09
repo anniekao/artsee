@@ -14,6 +14,7 @@ const SET_FILTER_ARRAY = "SET_FILTER_ARRAY";
 const SET_COMMENTS = "SET_COMMENTS";
 const SET_NEW_COMMENT = "SET_NEW_COMMENT";
 const UPDATE_ART_COMMENTS = "UPDATE_ART_COMMENTS";
+const ADD_ART = "ADD_ART";
 
 const initialState = {
   user: null,
@@ -56,6 +57,9 @@ const arts = (state = {}, action) => {
     }
     case SET_ARTS_DATA: {
       return Object.assign({}, action.arts)
+    }
+    case ADD_ART: {
+      return Object.assign({}, state, {[action.art.id]: action.art})
     }
     case UPDATE_ART_COMMENTS: {
       return Object.assign({}, state, {[action.id]: {...state[action.id], ['comments']: [...state[action.id].comments, action.comment]}})

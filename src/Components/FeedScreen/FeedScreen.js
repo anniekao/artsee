@@ -1,5 +1,5 @@
 import * as WebBrowser from 'expo-web-browser';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import filterArts from "../../helpers/filterArts"
 import Constants from 'expo-constants';
 
@@ -16,6 +16,10 @@ export default FeedScreen = ({ navigation, arts, postTag, setFilterArray, filter
     const resolvedArray = filterArts(arts, param);
     setFilterArray(resolvedArray);
   }
+
+  useEffect(() => {
+    changeFeed('default')
+  }, [arts])
 
   return (
     <Container>

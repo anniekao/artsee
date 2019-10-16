@@ -17,6 +17,7 @@ In the feed, users can not only comment on each unique photo, but mark them as "
 1. Clone the front-end repository to your local computer
 2. Run `npm install` to install all dependencies
 3. Install the `expo client app` either from the Apple or Google Store to your phone. Alternatively, you can run the app on your computer using an emulator, e.g. Android Studio
-4. If using the app, type `expo start` and use the app to scan the QR-Code. This will automatically bundle the app and download it to you phone.
+4. If using the app, type `expo start` and use the expo app to scan the QR-Code. This will automatically bundle Artsee and download it to you phone.
 
 ## Screenshots
+

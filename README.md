@@ -1,5 +1,5 @@
-# Artsee
-Disovery your city through public art
+# Artsee :rainbow::performing_arts::dizzy:
+Disover your city through public art
 
 ## Contributors
 [Arturas Zuta](https://github.com/arturaszuta/), [Annie Kao](https://github.com/anniekao/), [David Nguyen](https://github.com/ahrke/)
@@ -11,7 +11,7 @@ In the feed, users can not only comment on each unique photo, but mark them as "
 
 ## Tech Stack:
 **Front End**: React-Native, Expo, Redux <br>
-**Back End**: Ruby On Rails, Postgres, MongoDB, AWS(S3, Rekognition)
+**Back End**: Ruby On Rails, Postgresql, MongoDB, AWS(S3, Rekognition)
 
 ## Setup
 1. Clone the front-end repository to your local computer

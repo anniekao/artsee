@@ -1,4 +1,4 @@
-# Artsee :rainbow::performing_arts::dizzy:
+# Artsee :performing_arts::dizzy:
 Disover your city through public art
 
 ## Contributors

@@ -16,12 +16,12 @@ In the feed, users can not only comment on each unique photo, but mark them as "
 ## Screenshots
 
 <div align="center">
-  <table style="border: 0">
+  <table>
     <thead>
       <tr>
-        <td style="font-weight: bold">Map View</td>
-        <td style="font-weight: bold">Feed View</td>
-        <td style="font-weight: bold">Profile View</td>
+        <td><b>Map View</b></td>
+        <td><b>Feed View</b></td>
+        <td><b>Profile View</b></td>
       </tr>
     </thead>
     <tbody>

@@ -13,11 +13,33 @@ In the feed, users can not only comment on each unique photo, but mark them as "
 **Front End**: React-Native, Expo, Redux <br>
 **Back End**: Ruby On Rails, Postgresql, MongoDB, AWS(S3, Rekognition)
 
+## Screenshots
+
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <td>Map View</td>
+        <td>Feed View</td>
+        <td>Profile View</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img width="350" alt="map view" src="https://github.com/anniekao/artsee/blob/master/assets/readme_gifs/map.gif"></td>
+        <td><img width="350" alt="feed view" src="https://github.com/anniekao/artsee/blob/master/assets/readme_gifs/feed.gif"></td>
+        <td> <img width="350" alt="profile view" src="https://github.com/anniekao/artsee/blob/master/assets/readme_gifs/profile.gif"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
 ## Setup
 1. Clone the front-end repository to your local computer
 2. Run `npm install` to install all dependencies
 3. Install the `expo client app` either from the Apple or Google Store to your phone. Alternatively, you can run the app on your computer using an emulator, e.g. Android Studio
 4. If using the app, type `expo start` and use the expo app to scan the QR-Code. This will automatically bundle Artsee and download it to you phone.
 
-## Screenshots
+
 

@@ -1,5 +1,6 @@
 export default filterArts = (arts, param) => {
 
+
   function compare(a, b) {
    
     let newParam = param + '_count';

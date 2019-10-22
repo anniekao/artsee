@@ -5,7 +5,7 @@ import { FlatList } from 'react-native-gesture-handler';
 
 export default Deck = ({arts, user, postNewComment, comments, postTag, filter, users}) => {
 
-  const data = filter.map(artId => {
+  let data = filter.map(artId => {
     const artComments = comments.filter(comment => comment.art_id === arts[artId].id );
     return {
       id: artId,
@@ -15,6 +15,12 @@ export default Deck = ({arts, user, postNewComment, comments, postTag, filter, u
     }
 
   })
+
+  data.sort(function(a, b) {
+    a = new Date(a.created_at);
+    b = new Date(b.created_at);
+    return a>b ? -1 : a<b ? 1 : 0;
+});
 
   if (data) {
     return (
